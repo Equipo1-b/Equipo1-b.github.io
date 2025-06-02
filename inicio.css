@@ -208,65 +208,75 @@ margin-left: 17px;
 color: #333;
 margin-left: 20px;
 }
-  
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      text-align: center;
-    }
 
-      .texto {
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 34px;
+    color: black;
+    margin-top: 0;
+  }
+
+  .texto {
     position: static;
     margin: 10px auto;
     text-align: center;
-  } 
-    .buscador {
-      justify-content: center;
-    }
-  
-    .contenedor {
-      flex-direction: column;
-    }
-  
-    .categorias {
-      width: 100%;
-      border-right: none;
-      border-bottom: 2px solid #aaa;
-    }
-  
-    .ofertas {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .ofertas2 {
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    }
-  
-    .header h1 {
-      font-size: 10px;
-    }
+    font-size: 60px;
+    margin-top: 0;   
+    padding-top: 0;
   }
 
-  @media (max-width: 500px) {
-    .logo {
-      width: 100px;
-    }
-  
-    .buscador input {
-      width: 100%;
-    }
-  
-    .producto {
-      width: 100%;
-    }
-  
-    .producto-img img {
-      height: 100px;
-    }
-  
-    .producto-info .nombre,
-    .producto-info .precio {
+  .buscador {
+    justify-content: center;
+  }
+
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .categorias {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #aaa;
+  }
+
+  .ofertas {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .ofertas2 {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 100px;
+  }
+
+  .buscador input {
+    width: 100%;
+  }
+
+  .producto {
+    width: 100%;
+  }
+
+  .producto-img img {
+    height: 100px;
+  }
+
+  .producto-info .nombre,
+  .producto-info .precio {
+    font-size: 12px;
+  }
+}
       font-size: 12px;
     }
   }
