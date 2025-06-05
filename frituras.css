@@ -137,20 +137,20 @@
   
     .boton {
       position: absolute;
-      top: 140px;
-      left: 50px;
+      top: 120px;
+      left: 30px;
       margin: 0;
     }
   
     .titulo1 {
       padding: 40px;
-      font-size: 25px;
+      font-size: 20px;
     }
   
     .titulo2 {
       padding-left: 50px;
       padding-bottom: 20px;
-      font-size: 15px;
+      font-size: 10px;
     }
   
     .producto {
