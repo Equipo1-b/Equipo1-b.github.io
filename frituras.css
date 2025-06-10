@@ -6,71 +6,70 @@
   
 
   body {
-    font-family: "Libre Baskerville", serif;
-    background-color: white;
-    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #ccc;
+    color: black;
+    font-family: "Libre Baskerville", serif;
   }
 
   .buscador {
-    padding-top: 20px;
+    padding-top: 10px 0;
     text-align: center; 
     background-color: #2c3e50;
     height: 120px;
 }
 
 .barra-busqueda {
-  width: 400px;
-  height: 50px;
-  font-size: 20px;
-  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  height: 40px;
+  font-size: 1rem;
+  padding: 5px;
   border: 2px solid #444;
   border-radius: 5px;
 }
   
-
 .logo {
-  width: 190px;
-  height: 150px;
+  display: block;
+  margin: 10px auto;
+  width: 140px;
+  height: auto;
   object-fit: contain;
-  position: absolute;
-  right: 60px;
-  top: 65px;
+  position: static;
 }
 
 .titulo1 {
   background-color: #2c3e50;
   color: white;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
-  font-size: 35px;
+  font-size: 20px;
   font-family: "Playwrite HU", cursive;
+  width: 100%;
 }
 
-  .titulo2 {
-    background-color: #2c3e50;
-    color: white;
-    padding-bottom: 40px;
-    padding-left: 50px;
-    text-align: left;
-    font-size: 20px;
-    font-family: "Playwrite HU", cursive;
-  }
+.titulo2 {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: "Playwrite HU", cursive;
+  width: 100%;
+  text-align: center;
+}
 
-  .boton {
-    position: absolute;
-    text-align: center;
-    top: 130px;
-    left: 50px;
-    width: 100px;
-    height: 30px;
-    background-color: cadetblue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: "Playwrite HU", cursive;
-  }
+.boton {
+  display: block;
+  margin: 15px auto;
+  width: 100px;
+  height: 30px;
+  background-color: cadetblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Playwrite HU", cursive;
+}
 
   .categoria {
     margin-bottom: 40px;
@@ -117,44 +116,34 @@
 
   @media (min-width: 768px) {
     .buscador {
+      flex-direction: row;
+      justify-content: center;
       height: 120px;
-      position: relative;
     }
   
     .barra-busqueda {
       width: 400px;
       height: 45px;
-      font-size: 20px;
+    }
+  
+    .titulo1 {
+      font-size: 2.5rem;
     }
   
     .logo {
       width: 190px;
-      height: 150px;
-      position: absolute;
-      top: 50px;
-      right: 150px;
     }
   
     .boton {
-      position: absolute;
-      top: 140px;
-      left: 25px;
-      margin: 0;
-    }
-  
-    .titulo1 {
-      padding: 40px;
-      font-size: 20px;
+      width: 140px;
+      height: 40px;
     }
   
     .titulo2 {
-      padding-left: 50px;
-      padding-bottom: 20px;
-      font-size: 10px;
+      font-size: 1.2rem;
     }
   
     .producto {
       width: 200px;
     }
   }
-  
