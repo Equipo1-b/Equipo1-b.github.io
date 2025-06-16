@@ -33,11 +33,11 @@ body {
   margin: 10px auto;
   width: 100px;
   height: auto;
-  object-fit: contain;
+ 
   position: absolute;
   right:10px;
   top: 5px;
-  border-radius: 70px;
+  border-radius: 50%;
 }
 
 .titulo1 {
